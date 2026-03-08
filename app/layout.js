@@ -3,18 +3,19 @@ import './globals.css'
 export const metadata = {
   title: 'FilamentVault - 3D Printing Inventory',
   description: 'Track your 3D printing filament inventory with NFC reader/writer support',
-  viewport: 'width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=yes',
-  themeColor: '#1e293b',
-  appleWebApp: {
-    capable: true,
-    statusBarStyle: 'black-translucent',
-    title: 'FilamentVault'
-  },
   openGraph: {
     title: 'FilamentVault',
     description: 'Track your 3D printing filament inventory',
     type: 'website'
   }
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+  userScalable: true,
+  themeColor: '#1e293b'
 }
 
 export default function RootLayout({ children }) {
